@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+.text {
+    flex: 4;
+}
+
+.menu {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    width: 200px;
+    padding: 10px;
+    font-size: larger;
+}
+  
+.menu li a:hover {
+    color: white;       /* Убедитесь, что при наведении цвет также не изменяется */
+    background-color: gray;
+}
+
+#active {
+    color: white;
+    background-color: forestgreen;
+}
+
+.jump {
+    color: white;
+    background-color: gray;
+    border-radius: 6px;
+    animation: jump 0.5s linear infinite;
+    animation-direction: alternate;
+}
+
+@keyframes jump {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translatey(50px);
+    }
+}
+
+span {
+    font-weight: bold;
+}
